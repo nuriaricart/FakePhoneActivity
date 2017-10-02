@@ -30,8 +30,10 @@ public class FakePhoneActivity extends AppCompatActivity {
         text_phone.setText(pn);
     }
 
-    public void clicat (View v){
-        Button boto = (Button) v; //converteix a botó el View v
+    public void clear (View v){
+        Button boto = (Button) v;
+        text_phone.setText("");
+        //converteix a botó el View v
         //amb aquest botó creat ja podem fer les diverses funcions
         Log.i ("click", "Has clicat el botó");
     }
