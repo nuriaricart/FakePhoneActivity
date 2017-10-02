@@ -34,6 +34,7 @@ public class FakePhoneActivity extends AppCompatActivity {
     public void clear (View v){
         Button boto = (Button) v;
         text_phone.setText("");
+        pn = "";
         //converteix a botó el View v
         //amb aquest botó creat ja podem fer les diverses funcions
         Log.i ("click", "Has clicat el botó");
@@ -41,6 +42,10 @@ public class FakePhoneActivity extends AppCompatActivity {
 
     public void call (View v){
         Button boto = (Button) v;
-        Toast.makeText(this, getText(R.string.calling) + " " + pn , Toast.LENGTH_SHORT).show();
+        if (pn == ""){
+            Toast.makeText(this, getText(R.string.number), Toast.LENGTH_SHORT).show();
+        }
+        else
+            Toast.makeText(this, getText(R.string.calling) + " " + pn , Toast.LENGTH_SHORT).show();
     }
 }

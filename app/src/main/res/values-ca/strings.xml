@@ -4,4 +4,5 @@
     <string name="btn_esborra">Esborra</string>
     <string name="btn_call">Truca</string>
     <string name="calling">Trucant a</string>
+    <string name="number">No hi ha número de telèfon introduït</string>
 </resources>

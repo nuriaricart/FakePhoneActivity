@@ -4,4 +4,5 @@
     <string name="btn_esborra">Borra</string>
     <string name="btn_call">Llama</string>
     <string name="calling">Llamando al</string>
+    <string name="number">No se ha introducido el número</string>
 </resources>
