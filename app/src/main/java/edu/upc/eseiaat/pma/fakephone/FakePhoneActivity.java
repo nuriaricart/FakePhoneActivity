@@ -10,6 +10,8 @@ import android.widget.TextView;
 public class FakePhoneActivity extends AppCompatActivity {
 
     private TextView text_phone;
+    private String pn;
+    private Button btn_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,13 +19,15 @@ public class FakePhoneActivity extends AppCompatActivity {
         setContentView(R.layout.activity_fake_phone);
 
         text_phone = (TextView) findViewById(R.id.text_phone);
-
+        pn = "";
 
     }
 
-    public void num1 (View v){
-        Button btn_1 = (Button) v;
-        text_phone.setText("1");
+    public void click_num (View v){
+        Button btn = (Button) v;
+        String phone_number = btn.getText().toString();
+        pn = pn + phone_number;
+        text_phone.setText(pn);
     }
 
     public void clicat (View v){
