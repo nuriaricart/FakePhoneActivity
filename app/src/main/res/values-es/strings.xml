@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FakePhone</string>
-    <string name="btn_esborra">Borrar</string>
-    <string name="btn_call">Llamar</string>
+    <string name="btn_esborra">Borra</string>
+    <string name="btn_call">Llama</string>
+    <string name="calling">Llamando al</string>
 </resources>

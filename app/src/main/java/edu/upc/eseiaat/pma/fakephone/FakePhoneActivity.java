@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FakePhoneActivity extends AppCompatActivity {
 
@@ -36,5 +37,10 @@ public class FakePhoneActivity extends AppCompatActivity {
         //converteix a botó el View v
         //amb aquest botó creat ja podem fer les diverses funcions
         Log.i ("click", "Has clicat el botó");
+    }
+
+    public void call (View v){
+        Button boto = (Button) v;
+        Toast.makeText(this, getText(R.string.calling) + " " + pn , Toast.LENGTH_SHORT).show();
     }
 }
